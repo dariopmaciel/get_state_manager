@@ -6,6 +6,8 @@ import 'package:get_state_manager/controllers/controllers_home_page.dart';
 import 'package:get_state_manager/controllers/getxcontroller_example/controller.dart';
 import 'package:get_state_manager/controllers/getxcontroller_example/getx_controller_example_page.dart';
 import 'package:get_state_manager/firstRebuild/first_rebuild_page.dart';
+import 'package:get_state_manager/getx_widget/getx_widget_controller.dart';
+import 'package:get_state_manager/getx_widget/getx_widget_page.dart';
 import 'package:get_state_manager/home_page.dart';
 import 'package:get_state_manager/local_state_widget/local_state_widget.dart';
 import 'package:get_state_manager/tipos/tipos_obs_page.dart';
@@ -69,6 +71,11 @@ class MyApp extends StatelessWidget {
             name: '/tiposReativosGenericosNulos',
             page: () => TiposReativosGenericosNuloPage()),
         GetPage(name: '/tiposObs', page: () => TiposObsPage()),
+        GetPage(
+          name: '/getxWidget',
+          page: () => const GetxWidgetPage(),
+          // binding: BindingsBuilder.put(() => GetxWidgetController()          ),
+        ),
       ],
     );
   }

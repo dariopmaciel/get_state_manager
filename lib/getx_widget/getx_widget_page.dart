@@ -10,15 +10,25 @@ class GetxWidgetPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GetX Widget'),
+        title: const Text('GetX Widget Page'),
       ),
       body: Center(
-          child: GetX<GetxWidgetController>(
-        init: GetxWidgetController(),
-        builder: (controller) {
-          return Text(controller.nome);
-        },
-      )),
+        child: GetX<GetxWidgetController>(
+          builder: (controller) {
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(controller.nome),
+                ElevatedButton(
+                  onPressed: () => controller.alterarNome(),
+                  child: const Text("Alterar Nome"),
+                ),
+              ],
+            );
+          },
+          init: GetxWidgetController(),
+        ),
+      ),
     );
   }
 }

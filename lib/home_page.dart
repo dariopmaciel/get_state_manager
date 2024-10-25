@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Get.toNamed('/getxWidget');
                 },
-                child: const Text("ContrGetX Widget")),
+                child: const Text("GetX Widget")),
             //-----------------------------------------
             TextButton(
                 onPressed: () {
