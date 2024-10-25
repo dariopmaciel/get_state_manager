@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_state_manager/basico/reatividade_page.dart';
+import 'package:get_state_manager/firstRebuild/first_rebuild_page.dart';
 import 'package:get_state_manager/home_page.dart';
 import 'package:get_state_manager/local_state_widget/local_state_widget.dart';
 import 'package:get_state_manager/workers/workers_controller.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
             name: '/workers',
             page: () => WorkersPage(),
             binding: BindingsBuilder.put(() => WorkersController())),
+        GetPage(name: '/firstRebuild', page: () => const FirstRebuildPage()),
       ],
     );
   }
