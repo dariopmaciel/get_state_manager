@@ -6,6 +6,8 @@ import 'package:get_state_manager/controllers/controllers_home_page.dart';
 import 'package:get_state_manager/controllers/getxcontroller_example/controller.dart';
 import 'package:get_state_manager/controllers/getxcontroller_example/getx_controller_example_page.dart';
 import 'package:get_state_manager/firstRebuild/first_rebuild_page.dart';
+import 'package:get_state_manager/getBuilder/get_builder_controller.dart';
+import 'package:get_state_manager/getBuilder/get_builder_page.dart';
 import 'package:get_state_manager/getx_widget/getx_widget_controller.dart';
 import 'package:get_state_manager/getx_widget/getx_widget_page.dart';
 import 'package:get_state_manager/home_page.dart';
@@ -72,10 +74,14 @@ class MyApp extends StatelessWidget {
             page: () => TiposReativosGenericosNuloPage()),
         GetPage(name: '/tiposObs', page: () => TiposObsPage()),
         GetPage(
-          name: '/getxWidget',
-          page: () => const GetxWidgetPage(),
-          //!Caso remover do init da pagina, deve-se traser ele para ca
-          binding: BindingsBuilder.put(() => GetxWidgetController()),
+            name: '/getxWidget',
+            page: () => const GetxWidgetPage(),
+            //!Caso remover do init da pagina, deve-se traser ele para ca
+            binding: BindingsBuilder.put(() => GetxWidgetController())),
+        GetPage(
+          name: '/get_builder',
+          page: () => const GetBuilderPage(),
+          binding: BindingsBuilder.put(() => GetBuilderController()),
         ),
       ],
     );

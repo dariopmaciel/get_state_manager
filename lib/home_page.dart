@@ -39,7 +39,6 @@ class HomePage extends StatelessWidget {
                   Get.toNamed('/tiposObs');
                 },
                 child: const Text("Tipos Obs")),
-
             TextButton(
                 onPressed: () {
                   Get.toNamed('/atualizacao');
@@ -50,13 +49,11 @@ class HomePage extends StatelessWidget {
                   Get.toNamed('/controllers');
                 },
                 child: const Text("Controllers")),
-            //-----------------------------------------
             TextButton(
                 onPressed: () {
                   Get.toNamed('/getxWidget');
                 },
                 child: const Text("GetX Widget")),
-            //-----------------------------------------
             TextButton(
                 onPressed: () {
                   Get.toNamed('/localStateWidget');
@@ -72,6 +69,11 @@ class HomePage extends StatelessWidget {
                   Get.toNamed('/firstRebuild');
                 },
                 child: const Text('First Rebuild')),
+                 TextButton(
+                onPressed: () {
+                  Get.toNamed('/get_builder');
+                },
+                child: const Text('Get Builder')),
           ],
         ),
       ),
