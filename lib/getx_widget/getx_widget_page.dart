@@ -26,7 +26,9 @@ class GetxWidgetPage extends StatelessWidget {
               ],
             );
           },
-          init: GetxWidgetController(),
+          //! Caso interesse em manter o controle de dependencia no main, mover este init par ao main
+          //basta Comentar 
+          // init: GetxWidgetController(),
         ),
       ),
     );

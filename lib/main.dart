@@ -74,7 +74,8 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/getxWidget',
           page: () => const GetxWidgetPage(),
-          // binding: BindingsBuilder.put(() => GetxWidgetController()          ),
+          //!Caso remover do init da pagina, deve-se traser ele para ca
+          binding: BindingsBuilder.put(() => GetxWidgetController()),
         ),
       ],
     );
