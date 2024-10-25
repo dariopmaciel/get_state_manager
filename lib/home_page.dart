@@ -21,6 +21,44 @@ class HomePage extends StatelessWidget {
                 child: const Text("Basico Reatividade")),
             TextButton(
                 onPressed: () {
+                  Get.toNamed('/tiposReativos');
+                },
+                child: const Text("Tipos Reativos")),
+            TextButton(
+                onPressed: () {
+                  Get.toNamed('/tiposReativosGenericos');
+                },
+                child: const Text("Tipos Reativos Genericos")),
+            TextButton(
+                onPressed: () {
+                  Get.toNamed('/tiposReativosGenericosNulos');
+                },
+                child: const Text("Tipos Reativos Genericos Nulos")),
+            TextButton(
+                onPressed: () {
+                  Get.toNamed('/tiposObs');
+                },
+                child: const Text("Tipos Obs")),
+
+            TextButton(
+                onPressed: () {
+                  Get.toNamed('/atualizacao');
+                },
+                child: const Text("Atualização de Objetos")),
+            TextButton(
+                onPressed: () {
+                  Get.toNamed('/controllers');
+                },
+                child: const Text("Controllers")),
+            //-----------------------------------------
+            TextButton(
+                onPressed: () {
+                  Get.toNamed('/getxWidget');
+                },
+                child: const Text("ContrGetX Widget")),
+            //-----------------------------------------
+            TextButton(
+                onPressed: () {
                   Get.toNamed('/localStateWidget');
                 },
                 child: const Text("Local State Widget")),
