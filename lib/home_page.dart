@@ -15,11 +15,15 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
-              onPressed: () {
-                Get.toNamed('/basico');
-              },
-              child: const Text("Basico Reatividade"),
-            ),
+                onPressed: () {
+                  Get.toNamed('/basico');
+                },
+                child: const Text("Basico Reatividade")),
+            TextButton(
+                onPressed: () {
+                  Get.toNamed('/localStateWidget');
+                },
+                child: const Text("Local State Widget")),
           ],
         ),
       ),
