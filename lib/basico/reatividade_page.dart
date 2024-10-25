@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ReatividadePage extends StatelessWidget {
-  const ReatividadePage({super.key});
+  //criação de variavel reativa
+  final _counter = 0.obs;
+
+  ReatividadePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +18,13 @@ class ReatividadePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Counter:'),
-            const Text('1'),
-            ElevatedButton(onPressed: () {}, child: const Text('Soma 1')),
+            Obx(() => Text('${_counter.value}')),
+            ElevatedButton(
+              onPressed: () {
+                _counter.value++;
+              },
+              child: const Text('Soma 1'),
+            ),
           ],
         ),
       ),

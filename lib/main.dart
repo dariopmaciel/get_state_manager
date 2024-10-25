@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       getPages: [
         GetPage(name: '/', page: () => const HomePage()),
-        GetPage(name: '/basico', page: () => const ReatividadePage()),
+        GetPage(name: '/basico', page: () =>  ReatividadePage()),
       ],
     );
   }
